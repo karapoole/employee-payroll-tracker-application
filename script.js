@@ -10,7 +10,6 @@ const collectEmployees = function () {
   while (true) {
     // Prompts user to enter employee first name
     const firstNameResponse = prompt("Enter Employee First Name");
-
     // If user clicks cancel, break out of loop
     if (firstNameResponse == null) {
       break;
@@ -29,6 +28,8 @@ const collectEmployees = function () {
     // If user enters any data type other than a number, salary becomes $0.00
     if (isNaN(salaryResponse)) {
       salaryResponse = 0;
+    } else {
+      salaryResponse = Number(salaryResponse);
     }
     //Creates object to store employee first name, last name, and salary
     let newEmployee = {
@@ -72,7 +73,13 @@ const displayAverageSalary = function (employeesArray) {
 const getRandomEmployee = function (employeesArray) {
   // Selects and displays a random employee
   let random = Math.floor(Math.random() * employeesArray.length);
-  console.log(employeesArray[random]);
+  console.log(
+    "Congratulations to " +
+      employeesArray[random].firstName +
+      " " +
+      employeesArray[random].lastName +
+      ", our random drawing winner!"
+  );
 };
 
 /*
