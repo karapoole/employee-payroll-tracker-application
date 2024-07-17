@@ -11,6 +11,20 @@ const collectEmployees = function () {
     // Prompts user to enter employee first name
     const firstNameResponse = prompt("Enter Employee First Name");
 
+      // If user clicks cancel, break out of loop
+      if (firstNameResponse == null) {
+        break;
+      }
+      // Prompts user to enter employee last name
+      const lastNameResponse = prompt("Enter Employee Last Name");
+      if (lastNameResponse == null) {
+        break;
+      }
+      // Prompts user to enter employee salary
+      let salaryResponse = prompt("Enter Employee Salary");
+      if (salaryResponse == null) {
+        break;
+      }
 
   
 /*
