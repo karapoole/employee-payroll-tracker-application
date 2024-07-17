@@ -46,6 +46,27 @@ const collectEmployees = function () {
   } // end of while loop
 };
 
+// Passes employee array to calling function
+return employeesArray;
+
+// Displays the average salary
+const displayAverageSalary = function (employeesArray) {
+  // Calculates and displays the average salary for all employees
+  let sum = 0;
+  for (let i = 0; i < employeesArray.length; i++) {
+    sum = sum + employeesArray[i].salary;
+  }
+  const average = sum / employeesArray.length;
+  console.log(
+    "Average: " +
+      // Formats salary as currency
+      average.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD",
+      })
+  );
+};
+
 /*
   ====================
   STARTER CODE
