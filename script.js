@@ -44,10 +44,9 @@ const collectEmployees = function () {
       break;
     }
   } // end of while loop
+  // Passes employee array to calling function
+  return employeesArray;
 };
-
-// Passes employee array to calling function
-return employeesArray;
 
 // Displays the average salary
 const displayAverageSalary = function (employeesArray) {
@@ -65,6 +64,12 @@ const displayAverageSalary = function (employeesArray) {
         currency: "USD",
       })
   );
+};
+
+const getRandomEmployee = function (employeesArray) {
+  // Selects and displays a random employee
+  let random = Math.floor(Math.random() * employeesArray.length);
+  console.log(employeesArray[random]);
 };
 
 /*
