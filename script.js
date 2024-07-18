@@ -6,7 +6,7 @@ const collectEmployees = function () {
   // Gets user input to create and return an array of employee objects
   let employeesArray = [];
 
-  // Contiues to prompt user for employee info until they choose "cancel"
+  // Continues to prompt user for employee info until they choose "cancel"
   while (true) {
     // Prompts user to enter employee first name
     const firstNameResponse = prompt("Enter Employee First Name");
@@ -24,7 +24,7 @@ const collectEmployees = function () {
     if (salaryResponse == null) {
       break;
     }
-    // Evaluates if user inputs an number
+    // Evaluates if user inputs a number
     // If user enters any data type other than a number, salary becomes $0.00
     if (isNaN(salaryResponse)) {
       salaryResponse = 0;

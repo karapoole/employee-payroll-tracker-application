@@ -1,15 +1,24 @@
-# kara-poole-employee-tracker
+# <Your-Project-Title>
 
-GIVEN an employee payroll tracker
+## Description
 
-WHEN I click the "Add employee" button
-THEN I am presented with a series of prompts asking for first name, last name, and salary
+## Table of Contents (Optional)
 
-WHEN I finish adding an employee
-THEN I am prompted to continue or cancel
+If your README is long, add a table of contents to make it easy for users to find what they need.
 
-WHEN I choose to continue
-THEN I am prompted to add a new employee
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-WHEN I choose to cancel
-THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
+## Usage
+
+Provide instructions and examples for use. Include screenshots as needed.
+
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
+
+## License
